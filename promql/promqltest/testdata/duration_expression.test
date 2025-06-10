@@ -119,3 +119,21 @@ eval instant at 1000s metric1_total offset (100 + 2)
 # Test offset precedence without parentheses: offset 100 + 2
 eval instant at 1000s metric1_total offset 100 + 2
   {} 92
+
+eval instant at 1000s metric1_total offset +100 + 2
+  {} 92
+
+eval instant at 800s metric1_total offset -100 + 2
+  {} 92
+
+eval instant at 1000s metric1_total offset 1m + 2
+  {} 96
+
+eval instant at 1000s metric1_total offset +1m + 2
+  {} 96
+
+eval instant at 880s metric1_total offset -1m + 2
+  {} 96
+
+
+
