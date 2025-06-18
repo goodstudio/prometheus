@@ -182,8 +182,8 @@ var (
 		GoGC: getGoGC(),
 	}
 
-	// defaultScrapeConfig is the default scrape configuration.
-	defaultScrapeConfig = ScrapeConfig{
+	// DefaultScrapeConfig is the default scrape configuration.
+	DefaultScrapeConfig = ScrapeConfig{
 		// ScrapeTimeout, ScrapeInterval, ScrapeProtocols, AlwaysScrapeClassicHistograms, and ConvertClassicHistogramsToNHCB default to the configured globals.
 		MetricsPath:       "/metrics",
 		Scheme:            "http",
@@ -191,9 +191,9 @@ var (
 		HonorTimestamps:   true,
 		HTTPClientConfig:  config.DefaultHTTPClientConfig,
 		EnableCompression: true,
-		// Metric name Validation and Escaping are left blank so they can inherit
-		// from the global config. This means this object is de facto invalid at
-		// creation time.
+		// Matching the behavior in Validate(), default to UTF-8.
+		MetricNameValidationScheme: UTF8ValidationConfig,
+		MetricNameEscapingScheme:   model.AllowUTF8,
 	}
 
 	// DefaultAlertmanagerConfig is the default alertmanager configuration.
@@ -783,7 +783,11 @@ func (c *ScrapeConfig) SetDirectory(dir string) {
 
 // UnmarshalYAML implements the yaml.Unmarshaler interface.
 func (c *ScrapeConfig) UnmarshalYAML(unmarshal func(interface{}) error) error {
-	*c = defaultScrapeConfig
+	*c = DefaultScrapeConfig
+	// Unset default validation and escaping scheme values so they can inherit
+	// from the global config if they are blank in the file.
+	c.MetricNameValidationScheme = ""
+	c.MetricNameEscapingScheme = ""
 	if err := discovery.UnmarshalYAMLWithInlineConfigs(c, unmarshal); err != nil {
 		return err
 	}

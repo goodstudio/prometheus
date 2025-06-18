@@ -228,8 +228,8 @@ var expectedConf = &Config{
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath: defaultScrapeConfig.MetricsPath,
-			Scheme:      defaultScrapeConfig.Scheme,
+			MetricsPath: DefaultScrapeConfig.MetricsPath,
+			Scheme:      DefaultScrapeConfig.Scheme,
 
 			HTTPClientConfig: config.HTTPClientConfig{
 				Authorization: &config.Authorization{
@@ -447,8 +447,8 @@ var expectedConf = &Config{
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      defaultScrapeConfig.MetricsPath,
-			Scheme:           defaultScrapeConfig.Scheme,
+			MetricsPath:      DefaultScrapeConfig.MetricsPath,
+			Scheme:           DefaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -545,8 +545,8 @@ var expectedConf = &Config{
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      defaultScrapeConfig.MetricsPath,
-			Scheme:           defaultScrapeConfig.Scheme,
+			MetricsPath:      DefaultScrapeConfig.MetricsPath,
+			Scheme:           DefaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -589,8 +589,8 @@ var expectedConf = &Config{
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath: defaultScrapeConfig.MetricsPath,
-			Scheme:      defaultScrapeConfig.Scheme,
+			MetricsPath: DefaultScrapeConfig.MetricsPath,
+			Scheme:      DefaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.HTTPClientConfig{
 				BasicAuth: &config.BasicAuth{
 					Username:     "myusername",
@@ -633,8 +633,8 @@ var expectedConf = &Config{
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      defaultScrapeConfig.MetricsPath,
-			Scheme:           defaultScrapeConfig.Scheme,
+			MetricsPath:      DefaultScrapeConfig.MetricsPath,
+			Scheme:           DefaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -667,8 +667,8 @@ var expectedConf = &Config{
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      defaultScrapeConfig.MetricsPath,
-			Scheme:           defaultScrapeConfig.Scheme,
+			MetricsPath:      DefaultScrapeConfig.MetricsPath,
+			Scheme:           DefaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -709,8 +709,8 @@ var expectedConf = &Config{
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      defaultScrapeConfig.MetricsPath,
-			Scheme:           defaultScrapeConfig.Scheme,
+			MetricsPath:      DefaultScrapeConfig.MetricsPath,
+			Scheme:           DefaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -748,8 +748,8 @@ var expectedConf = &Config{
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      defaultScrapeConfig.MetricsPath,
-			Scheme:           defaultScrapeConfig.Scheme,
+			MetricsPath:      DefaultScrapeConfig.MetricsPath,
+			Scheme:           DefaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -794,8 +794,8 @@ var expectedConf = &Config{
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      defaultScrapeConfig.MetricsPath,
-			Scheme:           defaultScrapeConfig.Scheme,
+			MetricsPath:      DefaultScrapeConfig.MetricsPath,
+			Scheme:           DefaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -830,8 +830,8 @@ var expectedConf = &Config{
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      defaultScrapeConfig.MetricsPath,
-			Scheme:           defaultScrapeConfig.Scheme,
+			MetricsPath:      DefaultScrapeConfig.MetricsPath,
+			Scheme:           DefaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -869,8 +869,8 @@ var expectedConf = &Config{
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      defaultScrapeConfig.MetricsPath,
-			Scheme:           defaultScrapeConfig.Scheme,
+			MetricsPath:      DefaultScrapeConfig.MetricsPath,
+			Scheme:           DefaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -901,8 +901,8 @@ var expectedConf = &Config{
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      defaultScrapeConfig.MetricsPath,
-			Scheme:           defaultScrapeConfig.Scheme,
+			MetricsPath:      DefaultScrapeConfig.MetricsPath,
+			Scheme:           DefaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -937,7 +937,7 @@ var expectedConf = &Config{
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
 			MetricsPath:      "/federate",
-			Scheme:           defaultScrapeConfig.Scheme,
+			Scheme:           DefaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -971,8 +971,8 @@ var expectedConf = &Config{
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      defaultScrapeConfig.MetricsPath,
-			Scheme:           defaultScrapeConfig.Scheme,
+			MetricsPath:      DefaultScrapeConfig.MetricsPath,
+			Scheme:           DefaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -1006,8 +1006,8 @@ var expectedConf = &Config{
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      defaultScrapeConfig.MetricsPath,
-			Scheme:           defaultScrapeConfig.Scheme,
+			MetricsPath:      DefaultScrapeConfig.MetricsPath,
+			Scheme:           DefaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -1038,8 +1038,8 @@ var expectedConf = &Config{
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      defaultScrapeConfig.MetricsPath,
-			Scheme:           defaultScrapeConfig.Scheme,
+			MetricsPath:      DefaultScrapeConfig.MetricsPath,
+			Scheme:           DefaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -1078,8 +1078,8 @@ var expectedConf = &Config{
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      defaultScrapeConfig.MetricsPath,
-			Scheme:           defaultScrapeConfig.Scheme,
+			MetricsPath:      DefaultScrapeConfig.MetricsPath,
+			Scheme:           DefaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -1117,8 +1117,8 @@ var expectedConf = &Config{
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      defaultScrapeConfig.MetricsPath,
-			Scheme:           defaultScrapeConfig.Scheme,
+			MetricsPath:      DefaultScrapeConfig.MetricsPath,
+			Scheme:           DefaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -1153,8 +1153,8 @@ var expectedConf = &Config{
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      defaultScrapeConfig.MetricsPath,
-			Scheme:           defaultScrapeConfig.Scheme,
+			MetricsPath:      DefaultScrapeConfig.MetricsPath,
+			Scheme:           DefaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -1188,8 +1188,8 @@ var expectedConf = &Config{
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      defaultScrapeConfig.MetricsPath,
-			Scheme:           defaultScrapeConfig.Scheme,
+			MetricsPath:      DefaultScrapeConfig.MetricsPath,
+			Scheme:           DefaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -1227,8 +1227,8 @@ var expectedConf = &Config{
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      defaultScrapeConfig.MetricsPath,
-			Scheme:           defaultScrapeConfig.Scheme,
+			MetricsPath:      DefaultScrapeConfig.MetricsPath,
+			Scheme:           DefaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -1269,8 +1269,8 @@ var expectedConf = &Config{
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      defaultScrapeConfig.MetricsPath,
-			Scheme:           defaultScrapeConfig.Scheme,
+			MetricsPath:      DefaultScrapeConfig.MetricsPath,
+			Scheme:           DefaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			RelabelConfigs: []*relabel.Config{
@@ -1330,8 +1330,8 @@ var expectedConf = &Config{
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      defaultScrapeConfig.MetricsPath,
-			Scheme:           defaultScrapeConfig.Scheme,
+			MetricsPath:      DefaultScrapeConfig.MetricsPath,
+			Scheme:           DefaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -1363,8 +1363,8 @@ var expectedConf = &Config{
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
-			MetricsPath:      defaultScrapeConfig.MetricsPath,
-			Scheme:           defaultScrapeConfig.Scheme,
+			MetricsPath:      DefaultScrapeConfig.MetricsPath,
+			Scheme:           DefaultScrapeConfig.Scheme,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
 				&ovhcloud.SDConfig{
@@ -1406,8 +1406,8 @@ var expectedConf = &Config{
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
-			MetricsPath:      defaultScrapeConfig.MetricsPath,
-			Scheme:           defaultScrapeConfig.Scheme,
+			MetricsPath:      DefaultScrapeConfig.MetricsPath,
+			Scheme:           DefaultScrapeConfig.Scheme,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
 				&scaleway.SDConfig{
@@ -1454,8 +1454,8 @@ var expectedConf = &Config{
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      defaultScrapeConfig.MetricsPath,
-			Scheme:           defaultScrapeConfig.Scheme,
+			MetricsPath:      DefaultScrapeConfig.MetricsPath,
+			Scheme:           DefaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -1493,8 +1493,8 @@ var expectedConf = &Config{
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      defaultScrapeConfig.MetricsPath,
-			Scheme:           defaultScrapeConfig.Scheme,
+			MetricsPath:      DefaultScrapeConfig.MetricsPath,
+			Scheme:           DefaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 			ServiceDiscoveryConfigs: discovery.Configs{
 				&stackit.SDConfig{
@@ -1534,8 +1534,8 @@ var expectedConf = &Config{
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
-			MetricsPath:      defaultScrapeConfig.MetricsPath,
-			Scheme:           defaultScrapeConfig.Scheme,
+			MetricsPath:      DefaultScrapeConfig.MetricsPath,
+			Scheme:           DefaultScrapeConfig.Scheme,
 			ServiceDiscoveryConfigs: discovery.Configs{
 				&uyuni.SDConfig{
 					Server:           "https://localhost:1234",
@@ -1568,8 +1568,8 @@ var expectedConf = &Config{
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      defaultScrapeConfig.MetricsPath,
-			Scheme:           defaultScrapeConfig.Scheme,
+			MetricsPath:      DefaultScrapeConfig.MetricsPath,
+			Scheme:           DefaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -1605,8 +1605,8 @@ var expectedConf = &Config{
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      defaultScrapeConfig.MetricsPath,
-			Scheme:           defaultScrapeConfig.Scheme,
+			MetricsPath:      DefaultScrapeConfig.MetricsPath,
+			Scheme:           DefaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -2646,8 +2646,8 @@ func TestGetScrapeConfigs(t *testing.T) {
 					AlwaysScrapeClassicHistograms:  boolPtr(false),
 					ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-					MetricsPath: defaultScrapeConfig.MetricsPath,
-					Scheme:      defaultScrapeConfig.Scheme,
+					MetricsPath: DefaultScrapeConfig.MetricsPath,
+					Scheme:      DefaultScrapeConfig.Scheme,
 
 					EnableCompression: true,
 
@@ -2692,8 +2692,8 @@ func TestGetScrapeConfigs(t *testing.T) {
 						EnableHTTP2:     true,
 					},
 
-					MetricsPath: defaultScrapeConfig.MetricsPath,
-					Scheme:      defaultScrapeConfig.Scheme,
+					MetricsPath: DefaultScrapeConfig.MetricsPath,
+					Scheme:      DefaultScrapeConfig.Scheme,
 
 					EnableCompression: true,
 
