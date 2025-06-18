@@ -192,7 +192,8 @@ var (
 		HTTPClientConfig:  config.DefaultHTTPClientConfig,
 		EnableCompression: true,
 		// Metric name Validation and Escaping are left blank so they can inherit
-		// from the global config.
+		// from the global config. This means this object is de facto invalid at
+		// creation time.
 	}
 
 	// DefaultAlertmanagerConfig is the default alertmanager configuration.
