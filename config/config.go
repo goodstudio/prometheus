@@ -172,6 +172,9 @@ var (
 		ScrapeProtocols:                DefaultScrapeProtocols,
 		ConvertClassicHistogramsToNHCB: false,
 		AlwaysScrapeClassicHistograms:  false,
+		// Matching the behavior in Validate(), default to UTF-8.
+		MetricNameValidationScheme:     UTF8ValidationConfig,
+		MetricNameEscapingScheme:       model.AllowUTF8,
 	}
 
 	DefaultRuntimeConfig = RuntimeConfig{
@@ -182,12 +185,15 @@ var (
 	// DefaultScrapeConfig is the default scrape configuration.
 	DefaultScrapeConfig = ScrapeConfig{
 		// ScrapeTimeout, ScrapeInterval, ScrapeProtocols, AlwaysScrapeClassicHistograms, and ConvertClassicHistogramsToNHCB default to the configured globals.
-		MetricsPath:       "/metrics",
-		Scheme:            "http",
-		HonorLabels:       false,
-		HonorTimestamps:   true,
-		HTTPClientConfig:  config.DefaultHTTPClientConfig,
-		EnableCompression: true,
+		MetricsPath:                "/metrics",
+		Scheme:                     "http",
+		HonorLabels:                false,
+		HonorTimestamps:            true,
+		HTTPClientConfig:           config.DefaultHTTPClientConfig,
+		EnableCompression:          true,
+		// Matching the behavior in Validate(), default to UTF-8.
+		MetricNameValidationScheme: UTF8ValidationConfig,
+		MetricNameEscapingScheme:   model.AllowUTF8,
 	}
 
 	// DefaultAlertmanagerConfig is the default alertmanager configuration.
