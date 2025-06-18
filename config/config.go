@@ -173,8 +173,8 @@ var (
 		ConvertClassicHistogramsToNHCB: false,
 		AlwaysScrapeClassicHistograms:  false,
 		// Matching the behavior in Validate(), default to UTF-8.
-		MetricNameValidationScheme:     UTF8ValidationConfig,
-		MetricNameEscapingScheme:       model.AllowUTF8,
+		MetricNameValidationScheme: UTF8ValidationConfig,
+		MetricNameEscapingScheme:   model.AllowUTF8,
 	}
 
 	DefaultRuntimeConfig = RuntimeConfig{
@@ -182,18 +182,17 @@ var (
 		GoGC: getGoGC(),
 	}
 
-	// DefaultScrapeConfig is the default scrape configuration.
-	DefaultScrapeConfig = ScrapeConfig{
+	// defaultScrapeConfig is the default scrape configuration.
+	defaultScrapeConfig = ScrapeConfig{
 		// ScrapeTimeout, ScrapeInterval, ScrapeProtocols, AlwaysScrapeClassicHistograms, and ConvertClassicHistogramsToNHCB default to the configured globals.
-		MetricsPath:                "/metrics",
-		Scheme:                     "http",
-		HonorLabels:                false,
-		HonorTimestamps:            true,
-		HTTPClientConfig:           config.DefaultHTTPClientConfig,
-		EnableCompression:          true,
-		// Matching the behavior in Validate(), default to UTF-8.
-		MetricNameValidationScheme: UTF8ValidationConfig,
-		MetricNameEscapingScheme:   model.AllowUTF8,
+		MetricsPath:       "/metrics",
+		Scheme:            "http",
+		HonorLabels:       false,
+		HonorTimestamps:   true,
+		HTTPClientConfig:  config.DefaultHTTPClientConfig,
+		EnableCompression: true,
+		// Metric name Validation and Escaping are left blank so they can inherit
+		// from the global config.
 	}
 
 	// DefaultAlertmanagerConfig is the default alertmanager configuration.
@@ -783,7 +782,7 @@ func (c *ScrapeConfig) SetDirectory(dir string) {
 
 // UnmarshalYAML implements the yaml.Unmarshaler interface.
 func (c *ScrapeConfig) UnmarshalYAML(unmarshal func(interface{}) error) error {
-	*c = DefaultScrapeConfig
+	*c = defaultScrapeConfig
 	if err := discovery.UnmarshalYAMLWithInlineConfigs(c, unmarshal); err != nil {
 		return err
 	}

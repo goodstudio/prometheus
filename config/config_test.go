@@ -223,13 +223,13 @@ var expectedConf = &Config{
 			ScrapeProtocols:                DefaultGlobalConfig.ScrapeProtocols,
 			ScrapeFallbackProtocol:         PrometheusText0_0_4,
 			ScrapeFailureLogFile:           "testdata/fail_prom.log",
-			MetricNameValidationScheme:     UTF8ValidationConfig,
-			MetricNameEscapingScheme:       model.AllowUTF8,
+			MetricNameValidationScheme:     DefaultGlobalConfig.MetricNameValidationScheme,
+			MetricNameEscapingScheme:       DefaultGlobalConfig.MetricNameEscapingScheme,
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath: DefaultScrapeConfig.MetricsPath,
-			Scheme:      DefaultScrapeConfig.Scheme,
+			MetricsPath: defaultScrapeConfig.MetricsPath,
+			Scheme:      defaultScrapeConfig.Scheme,
 
 			HTTPClientConfig: config.HTTPClientConfig{
 				Authorization: &config.Authorization{
@@ -340,8 +340,8 @@ var expectedConf = &Config{
 			LabelValueLengthLimit:          210,
 			ScrapeProtocols:                []ScrapeProtocol{PrometheusText0_0_4},
 			ScrapeFailureLogFile:           globScrapeFailureLogFile,
-			MetricNameValidationScheme:     UTF8ValidationConfig,
-			MetricNameEscapingScheme:       model.AllowUTF8,
+			MetricNameValidationScheme:     DefaultGlobalConfig.MetricNameValidationScheme,
+			MetricNameEscapingScheme:       DefaultGlobalConfig.MetricNameEscapingScheme,
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
@@ -442,13 +442,13 @@ var expectedConf = &Config{
 			LabelValueLengthLimit:          globLabelValueLengthLimit,
 			ScrapeProtocols:                DefaultGlobalConfig.ScrapeProtocols,
 			ScrapeFailureLogFile:           globScrapeFailureLogFile,
-			MetricNameValidationScheme:     UTF8ValidationConfig,
-			MetricNameEscapingScheme:       model.AllowUTF8,
+			MetricNameValidationScheme:     DefaultGlobalConfig.MetricNameValidationScheme,
+			MetricNameEscapingScheme:       DefaultGlobalConfig.MetricNameEscapingScheme,
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      DefaultScrapeConfig.MetricsPath,
-			Scheme:           DefaultScrapeConfig.Scheme,
+			MetricsPath:      defaultScrapeConfig.MetricsPath,
+			Scheme:           defaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -502,8 +502,8 @@ var expectedConf = &Config{
 			LabelValueLengthLimit:          globLabelValueLengthLimit,
 			ScrapeProtocols:                DefaultGlobalConfig.ScrapeProtocols,
 			ScrapeFailureLogFile:           globScrapeFailureLogFile,
-			MetricNameValidationScheme:     UTF8ValidationConfig,
-			MetricNameEscapingScheme:       model.AllowUTF8,
+			MetricNameValidationScheme:     DefaultGlobalConfig.MetricNameValidationScheme,
+			MetricNameEscapingScheme:       DefaultGlobalConfig.MetricNameEscapingScheme,
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
@@ -540,13 +540,13 @@ var expectedConf = &Config{
 			LabelValueLengthLimit:          globLabelValueLengthLimit,
 			ScrapeProtocols:                DefaultGlobalConfig.ScrapeProtocols,
 			ScrapeFailureLogFile:           globScrapeFailureLogFile,
-			MetricNameValidationScheme:     UTF8ValidationConfig,
-			MetricNameEscapingScheme:       model.AllowUTF8,
+			MetricNameValidationScheme:     DefaultGlobalConfig.MetricNameValidationScheme,
+			MetricNameEscapingScheme:       DefaultGlobalConfig.MetricNameEscapingScheme,
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      DefaultScrapeConfig.MetricsPath,
-			Scheme:           DefaultScrapeConfig.Scheme,
+			MetricsPath:      defaultScrapeConfig.MetricsPath,
+			Scheme:           defaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -584,13 +584,13 @@ var expectedConf = &Config{
 			LabelValueLengthLimit:          globLabelValueLengthLimit,
 			ScrapeProtocols:                DefaultGlobalConfig.ScrapeProtocols,
 			ScrapeFailureLogFile:           globScrapeFailureLogFile,
-			MetricNameValidationScheme:     UTF8ValidationConfig,
-			MetricNameEscapingScheme:       model.AllowUTF8,
+			MetricNameValidationScheme:     DefaultGlobalConfig.MetricNameValidationScheme,
+			MetricNameEscapingScheme:       DefaultGlobalConfig.MetricNameEscapingScheme,
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath: DefaultScrapeConfig.MetricsPath,
-			Scheme:      DefaultScrapeConfig.Scheme,
+			MetricsPath: defaultScrapeConfig.MetricsPath,
+			Scheme:      defaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.HTTPClientConfig{
 				BasicAuth: &config.BasicAuth{
 					Username:     "myusername",
@@ -628,13 +628,13 @@ var expectedConf = &Config{
 			LabelValueLengthLimit:          globLabelValueLengthLimit,
 			ScrapeProtocols:                DefaultGlobalConfig.ScrapeProtocols,
 			ScrapeFailureLogFile:           globScrapeFailureLogFile,
-			MetricNameValidationScheme:     UTF8ValidationConfig,
-			MetricNameEscapingScheme:       model.AllowUTF8,
+			MetricNameValidationScheme:     DefaultGlobalConfig.MetricNameValidationScheme,
+			MetricNameEscapingScheme:       DefaultGlobalConfig.MetricNameEscapingScheme,
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      DefaultScrapeConfig.MetricsPath,
-			Scheme:           DefaultScrapeConfig.Scheme,
+			MetricsPath:      defaultScrapeConfig.MetricsPath,
+			Scheme:           defaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -662,13 +662,13 @@ var expectedConf = &Config{
 			LabelValueLengthLimit:          globLabelValueLengthLimit,
 			ScrapeProtocols:                DefaultGlobalConfig.ScrapeProtocols,
 			ScrapeFailureLogFile:           globScrapeFailureLogFile,
-			MetricNameValidationScheme:     UTF8ValidationConfig,
-			MetricNameEscapingScheme:       model.AllowUTF8,
+			MetricNameValidationScheme:     DefaultGlobalConfig.MetricNameValidationScheme,
+			MetricNameEscapingScheme:       DefaultGlobalConfig.MetricNameEscapingScheme,
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      DefaultScrapeConfig.MetricsPath,
-			Scheme:           DefaultScrapeConfig.Scheme,
+			MetricsPath:      defaultScrapeConfig.MetricsPath,
+			Scheme:           defaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -704,13 +704,13 @@ var expectedConf = &Config{
 			LabelValueLengthLimit:          globLabelValueLengthLimit,
 			ScrapeProtocols:                DefaultGlobalConfig.ScrapeProtocols,
 			ScrapeFailureLogFile:           globScrapeFailureLogFile,
-			MetricNameValidationScheme:     UTF8ValidationConfig,
-			MetricNameEscapingScheme:       model.AllowUTF8,
+			MetricNameValidationScheme:     DefaultGlobalConfig.MetricNameValidationScheme,
+			MetricNameEscapingScheme:       DefaultGlobalConfig.MetricNameEscapingScheme,
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      DefaultScrapeConfig.MetricsPath,
-			Scheme:           DefaultScrapeConfig.Scheme,
+			MetricsPath:      defaultScrapeConfig.MetricsPath,
+			Scheme:           defaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -743,13 +743,13 @@ var expectedConf = &Config{
 			LabelValueLengthLimit:          globLabelValueLengthLimit,
 			ScrapeProtocols:                DefaultGlobalConfig.ScrapeProtocols,
 			ScrapeFailureLogFile:           globScrapeFailureLogFile,
-			MetricNameValidationScheme:     UTF8ValidationConfig,
-			MetricNameEscapingScheme:       model.AllowUTF8,
+			MetricNameValidationScheme:     DefaultGlobalConfig.MetricNameValidationScheme,
+			MetricNameEscapingScheme:       DefaultGlobalConfig.MetricNameEscapingScheme,
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      DefaultScrapeConfig.MetricsPath,
-			Scheme:           DefaultScrapeConfig.Scheme,
+			MetricsPath:      defaultScrapeConfig.MetricsPath,
+			Scheme:           defaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -789,13 +789,13 @@ var expectedConf = &Config{
 			LabelValueLengthLimit:          globLabelValueLengthLimit,
 			ScrapeProtocols:                DefaultGlobalConfig.ScrapeProtocols,
 			ScrapeFailureLogFile:           globScrapeFailureLogFile,
-			MetricNameValidationScheme:     UTF8ValidationConfig,
-			MetricNameEscapingScheme:       model.AllowUTF8,
+			MetricNameValidationScheme:     DefaultGlobalConfig.MetricNameValidationScheme,
+			MetricNameEscapingScheme:       DefaultGlobalConfig.MetricNameEscapingScheme,
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      DefaultScrapeConfig.MetricsPath,
-			Scheme:           DefaultScrapeConfig.Scheme,
+			MetricsPath:      defaultScrapeConfig.MetricsPath,
+			Scheme:           defaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -825,13 +825,13 @@ var expectedConf = &Config{
 			LabelValueLengthLimit:          globLabelValueLengthLimit,
 			ScrapeProtocols:                DefaultGlobalConfig.ScrapeProtocols,
 			ScrapeFailureLogFile:           globScrapeFailureLogFile,
-			MetricNameValidationScheme:     UTF8ValidationConfig,
-			MetricNameEscapingScheme:       model.AllowUTF8,
+			MetricNameValidationScheme:     DefaultGlobalConfig.MetricNameValidationScheme,
+			MetricNameEscapingScheme:       DefaultGlobalConfig.MetricNameEscapingScheme,
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      DefaultScrapeConfig.MetricsPath,
-			Scheme:           DefaultScrapeConfig.Scheme,
+			MetricsPath:      defaultScrapeConfig.MetricsPath,
+			Scheme:           defaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -864,13 +864,13 @@ var expectedConf = &Config{
 			LabelValueLengthLimit:          globLabelValueLengthLimit,
 			ScrapeProtocols:                DefaultGlobalConfig.ScrapeProtocols,
 			ScrapeFailureLogFile:           globScrapeFailureLogFile,
-			MetricNameValidationScheme:     UTF8ValidationConfig,
-			MetricNameEscapingScheme:       model.AllowUTF8,
+			MetricNameValidationScheme:     DefaultGlobalConfig.MetricNameValidationScheme,
+			MetricNameEscapingScheme:       DefaultGlobalConfig.MetricNameEscapingScheme,
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      DefaultScrapeConfig.MetricsPath,
-			Scheme:           DefaultScrapeConfig.Scheme,
+			MetricsPath:      defaultScrapeConfig.MetricsPath,
+			Scheme:           defaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -896,13 +896,13 @@ var expectedConf = &Config{
 			LabelValueLengthLimit:          globLabelValueLengthLimit,
 			ScrapeProtocols:                DefaultGlobalConfig.ScrapeProtocols,
 			ScrapeFailureLogFile:           globScrapeFailureLogFile,
-			MetricNameValidationScheme:     UTF8ValidationConfig,
-			MetricNameEscapingScheme:       model.AllowUTF8,
+			MetricNameValidationScheme:     DefaultGlobalConfig.MetricNameValidationScheme,
+			MetricNameEscapingScheme:       DefaultGlobalConfig.MetricNameEscapingScheme,
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      DefaultScrapeConfig.MetricsPath,
-			Scheme:           DefaultScrapeConfig.Scheme,
+			MetricsPath:      defaultScrapeConfig.MetricsPath,
+			Scheme:           defaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -931,13 +931,13 @@ var expectedConf = &Config{
 			LabelValueLengthLimit:          globLabelValueLengthLimit,
 			ScrapeProtocols:                DefaultGlobalConfig.ScrapeProtocols,
 			ScrapeFailureLogFile:           globScrapeFailureLogFile,
-			MetricNameValidationScheme:     UTF8ValidationConfig,
-			MetricNameEscapingScheme:       model.AllowUTF8,
+			MetricNameValidationScheme:     DefaultGlobalConfig.MetricNameValidationScheme,
+			MetricNameEscapingScheme:       DefaultGlobalConfig.MetricNameEscapingScheme,
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
 			MetricsPath:      "/federate",
-			Scheme:           DefaultScrapeConfig.Scheme,
+			Scheme:           defaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -966,13 +966,13 @@ var expectedConf = &Config{
 			LabelValueLengthLimit:          globLabelValueLengthLimit,
 			ScrapeProtocols:                DefaultGlobalConfig.ScrapeProtocols,
 			ScrapeFailureLogFile:           globScrapeFailureLogFile,
-			MetricNameValidationScheme:     UTF8ValidationConfig,
-			MetricNameEscapingScheme:       model.AllowUTF8,
+			MetricNameValidationScheme:     DefaultGlobalConfig.MetricNameValidationScheme,
+			MetricNameEscapingScheme:       DefaultGlobalConfig.MetricNameEscapingScheme,
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      DefaultScrapeConfig.MetricsPath,
-			Scheme:           DefaultScrapeConfig.Scheme,
+			MetricsPath:      defaultScrapeConfig.MetricsPath,
+			Scheme:           defaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -1001,13 +1001,13 @@ var expectedConf = &Config{
 			LabelValueLengthLimit:          globLabelValueLengthLimit,
 			ScrapeProtocols:                DefaultGlobalConfig.ScrapeProtocols,
 			ScrapeFailureLogFile:           globScrapeFailureLogFile,
-			MetricNameValidationScheme:     UTF8ValidationConfig,
-			MetricNameEscapingScheme:       model.AllowUTF8,
+			MetricNameValidationScheme:     DefaultGlobalConfig.MetricNameValidationScheme,
+			MetricNameEscapingScheme:       DefaultGlobalConfig.MetricNameEscapingScheme,
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      DefaultScrapeConfig.MetricsPath,
-			Scheme:           DefaultScrapeConfig.Scheme,
+			MetricsPath:      defaultScrapeConfig.MetricsPath,
+			Scheme:           defaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -1033,13 +1033,13 @@ var expectedConf = &Config{
 			LabelValueLengthLimit:          globLabelValueLengthLimit,
 			ScrapeProtocols:                DefaultGlobalConfig.ScrapeProtocols,
 			ScrapeFailureLogFile:           globScrapeFailureLogFile,
-			MetricNameValidationScheme:     UTF8ValidationConfig,
-			MetricNameEscapingScheme:       model.AllowUTF8,
+			MetricNameValidationScheme:     DefaultGlobalConfig.MetricNameValidationScheme,
+			MetricNameEscapingScheme:       DefaultGlobalConfig.MetricNameEscapingScheme,
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      DefaultScrapeConfig.MetricsPath,
-			Scheme:           DefaultScrapeConfig.Scheme,
+			MetricsPath:      defaultScrapeConfig.MetricsPath,
+			Scheme:           defaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -1073,13 +1073,13 @@ var expectedConf = &Config{
 			LabelValueLengthLimit:          globLabelValueLengthLimit,
 			ScrapeProtocols:                DefaultGlobalConfig.ScrapeProtocols,
 			ScrapeFailureLogFile:           globScrapeFailureLogFile,
-			MetricNameValidationScheme:     UTF8ValidationConfig,
-			MetricNameEscapingScheme:       model.AllowUTF8,
+			MetricNameValidationScheme:     DefaultGlobalConfig.MetricNameValidationScheme,
+			MetricNameEscapingScheme:       DefaultGlobalConfig.MetricNameEscapingScheme,
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      DefaultScrapeConfig.MetricsPath,
-			Scheme:           DefaultScrapeConfig.Scheme,
+			MetricsPath:      defaultScrapeConfig.MetricsPath,
+			Scheme:           defaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -1112,13 +1112,13 @@ var expectedConf = &Config{
 			LabelValueLengthLimit:          globLabelValueLengthLimit,
 			ScrapeProtocols:                DefaultGlobalConfig.ScrapeProtocols,
 			ScrapeFailureLogFile:           globScrapeFailureLogFile,
-			MetricNameValidationScheme:     UTF8ValidationConfig,
-			MetricNameEscapingScheme:       model.AllowUTF8,
+			MetricNameValidationScheme:     DefaultGlobalConfig.MetricNameValidationScheme,
+			MetricNameEscapingScheme:       DefaultGlobalConfig.MetricNameEscapingScheme,
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      DefaultScrapeConfig.MetricsPath,
-			Scheme:           DefaultScrapeConfig.Scheme,
+			MetricsPath:      defaultScrapeConfig.MetricsPath,
+			Scheme:           defaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -1148,13 +1148,13 @@ var expectedConf = &Config{
 			LabelValueLengthLimit:          globLabelValueLengthLimit,
 			ScrapeProtocols:                DefaultGlobalConfig.ScrapeProtocols,
 			ScrapeFailureLogFile:           globScrapeFailureLogFile,
-			MetricNameValidationScheme:     UTF8ValidationConfig,
-			MetricNameEscapingScheme:       model.AllowUTF8,
+			MetricNameValidationScheme:     DefaultGlobalConfig.MetricNameValidationScheme,
+			MetricNameEscapingScheme:       DefaultGlobalConfig.MetricNameEscapingScheme,
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      DefaultScrapeConfig.MetricsPath,
-			Scheme:           DefaultScrapeConfig.Scheme,
+			MetricsPath:      defaultScrapeConfig.MetricsPath,
+			Scheme:           defaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -1183,13 +1183,13 @@ var expectedConf = &Config{
 			LabelValueLengthLimit:          globLabelValueLengthLimit,
 			ScrapeProtocols:                DefaultGlobalConfig.ScrapeProtocols,
 			ScrapeFailureLogFile:           globScrapeFailureLogFile,
-			MetricNameValidationScheme:     UTF8ValidationConfig,
-			MetricNameEscapingScheme:       model.AllowUTF8,
+			MetricNameValidationScheme:     DefaultGlobalConfig.MetricNameValidationScheme,
+			MetricNameEscapingScheme:       DefaultGlobalConfig.MetricNameEscapingScheme,
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      DefaultScrapeConfig.MetricsPath,
-			Scheme:           DefaultScrapeConfig.Scheme,
+			MetricsPath:      defaultScrapeConfig.MetricsPath,
+			Scheme:           defaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -1222,13 +1222,13 @@ var expectedConf = &Config{
 			LabelValueLengthLimit:          globLabelValueLengthLimit,
 			ScrapeProtocols:                DefaultGlobalConfig.ScrapeProtocols,
 			ScrapeFailureLogFile:           globScrapeFailureLogFile,
-			MetricNameValidationScheme:     UTF8ValidationConfig,
-			MetricNameEscapingScheme:       model.AllowUTF8,
+			MetricNameValidationScheme:     DefaultGlobalConfig.MetricNameValidationScheme,
+			MetricNameEscapingScheme:       DefaultGlobalConfig.MetricNameEscapingScheme,
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      DefaultScrapeConfig.MetricsPath,
-			Scheme:           DefaultScrapeConfig.Scheme,
+			MetricsPath:      defaultScrapeConfig.MetricsPath,
+			Scheme:           defaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -1264,13 +1264,13 @@ var expectedConf = &Config{
 			LabelValueLengthLimit:          globLabelValueLengthLimit,
 			ScrapeProtocols:                DefaultGlobalConfig.ScrapeProtocols,
 			ScrapeFailureLogFile:           globScrapeFailureLogFile,
-			MetricNameValidationScheme:     UTF8ValidationConfig,
-			MetricNameEscapingScheme:       model.AllowUTF8,
+			MetricNameValidationScheme:     DefaultGlobalConfig.MetricNameValidationScheme,
+			MetricNameEscapingScheme:       DefaultGlobalConfig.MetricNameEscapingScheme,
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      DefaultScrapeConfig.MetricsPath,
-			Scheme:           DefaultScrapeConfig.Scheme,
+			MetricsPath:      defaultScrapeConfig.MetricsPath,
+			Scheme:           defaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			RelabelConfigs: []*relabel.Config{
@@ -1325,13 +1325,13 @@ var expectedConf = &Config{
 			LabelValueLengthLimit:          globLabelValueLengthLimit,
 			ScrapeProtocols:                DefaultGlobalConfig.ScrapeProtocols,
 			ScrapeFailureLogFile:           globScrapeFailureLogFile,
-			MetricNameValidationScheme:     UTF8ValidationConfig,
-			MetricNameEscapingScheme:       model.AllowUTF8,
+			MetricNameValidationScheme:     DefaultGlobalConfig.MetricNameValidationScheme,
+			MetricNameEscapingScheme:       DefaultGlobalConfig.MetricNameEscapingScheme,
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      DefaultScrapeConfig.MetricsPath,
-			Scheme:           DefaultScrapeConfig.Scheme,
+			MetricsPath:      defaultScrapeConfig.MetricsPath,
+			Scheme:           defaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -1357,14 +1357,14 @@ var expectedConf = &Config{
 			LabelValueLengthLimit:          globLabelValueLengthLimit,
 			ScrapeProtocols:                DefaultGlobalConfig.ScrapeProtocols,
 			ScrapeFailureLogFile:           globScrapeFailureLogFile,
-			MetricNameValidationScheme:     UTF8ValidationConfig,
-			MetricNameEscapingScheme:       model.AllowUTF8,
+			MetricNameValidationScheme:     DefaultGlobalConfig.MetricNameValidationScheme,
+			MetricNameEscapingScheme:       DefaultGlobalConfig.MetricNameEscapingScheme,
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
-			MetricsPath:      DefaultScrapeConfig.MetricsPath,
-			Scheme:           DefaultScrapeConfig.Scheme,
+			MetricsPath:      defaultScrapeConfig.MetricsPath,
+			Scheme:           defaultScrapeConfig.Scheme,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
 				&ovhcloud.SDConfig{
@@ -1400,14 +1400,14 @@ var expectedConf = &Config{
 			LabelValueLengthLimit:          globLabelValueLengthLimit,
 			ScrapeProtocols:                DefaultGlobalConfig.ScrapeProtocols,
 			ScrapeFailureLogFile:           globScrapeFailureLogFile,
-			MetricNameValidationScheme:     UTF8ValidationConfig,
-			MetricNameEscapingScheme:       model.AllowUTF8,
+			MetricNameValidationScheme:     DefaultGlobalConfig.MetricNameValidationScheme,
+			MetricNameEscapingScheme:       DefaultGlobalConfig.MetricNameEscapingScheme,
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
-			MetricsPath:      DefaultScrapeConfig.MetricsPath,
-			Scheme:           DefaultScrapeConfig.Scheme,
+			MetricsPath:      defaultScrapeConfig.MetricsPath,
+			Scheme:           defaultScrapeConfig.Scheme,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
 				&scaleway.SDConfig{
@@ -1449,13 +1449,13 @@ var expectedConf = &Config{
 			LabelValueLengthLimit:          globLabelValueLengthLimit,
 			ScrapeProtocols:                DefaultGlobalConfig.ScrapeProtocols,
 			ScrapeFailureLogFile:           globScrapeFailureLogFile,
-			MetricNameValidationScheme:     UTF8ValidationConfig,
-			MetricNameEscapingScheme:       model.AllowUTF8,
+			MetricNameValidationScheme:     DefaultGlobalConfig.MetricNameValidationScheme,
+			MetricNameEscapingScheme:       DefaultGlobalConfig.MetricNameEscapingScheme,
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      DefaultScrapeConfig.MetricsPath,
-			Scheme:           DefaultScrapeConfig.Scheme,
+			MetricsPath:      defaultScrapeConfig.MetricsPath,
+			Scheme:           defaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -1488,13 +1488,13 @@ var expectedConf = &Config{
 			LabelValueLengthLimit:          globLabelValueLengthLimit,
 			ScrapeProtocols:                DefaultGlobalConfig.ScrapeProtocols,
 			ScrapeFailureLogFile:           globScrapeFailureLogFile,
-			MetricNameValidationScheme:     UTF8ValidationConfig,
-			MetricNameEscapingScheme:       model.AllowUTF8,
+			MetricNameValidationScheme:     DefaultGlobalConfig.MetricNameValidationScheme,
+			MetricNameEscapingScheme:       DefaultGlobalConfig.MetricNameEscapingScheme,
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      DefaultScrapeConfig.MetricsPath,
-			Scheme:           DefaultScrapeConfig.Scheme,
+			MetricsPath:      defaultScrapeConfig.MetricsPath,
+			Scheme:           defaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 			ServiceDiscoveryConfigs: discovery.Configs{
 				&stackit.SDConfig{
@@ -1528,14 +1528,14 @@ var expectedConf = &Config{
 			LabelValueLengthLimit:          globLabelValueLengthLimit,
 			ScrapeProtocols:                DefaultGlobalConfig.ScrapeProtocols,
 			ScrapeFailureLogFile:           globScrapeFailureLogFile,
-			MetricNameValidationScheme:     UTF8ValidationConfig,
-			MetricNameEscapingScheme:       model.AllowUTF8,
+			MetricNameValidationScheme:     DefaultGlobalConfig.MetricNameValidationScheme,
+			MetricNameEscapingScheme:       DefaultGlobalConfig.MetricNameEscapingScheme,
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
-			MetricsPath:      DefaultScrapeConfig.MetricsPath,
-			Scheme:           DefaultScrapeConfig.Scheme,
+			MetricsPath:      defaultScrapeConfig.MetricsPath,
+			Scheme:           defaultScrapeConfig.Scheme,
 			ServiceDiscoveryConfigs: discovery.Configs{
 				&uyuni.SDConfig{
 					Server:           "https://localhost:1234",
@@ -1563,13 +1563,13 @@ var expectedConf = &Config{
 			LabelValueLengthLimit:          globLabelValueLengthLimit,
 			ScrapeProtocols:                DefaultGlobalConfig.ScrapeProtocols,
 			ScrapeFailureLogFile:           globScrapeFailureLogFile,
-			MetricNameValidationScheme:     UTF8ValidationConfig,
-			MetricNameEscapingScheme:       model.AllowUTF8,
+			MetricNameValidationScheme:     DefaultGlobalConfig.MetricNameValidationScheme,
+			MetricNameEscapingScheme:       DefaultGlobalConfig.MetricNameEscapingScheme,
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      DefaultScrapeConfig.MetricsPath,
-			Scheme:           DefaultScrapeConfig.Scheme,
+			MetricsPath:      defaultScrapeConfig.MetricsPath,
+			Scheme:           defaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -1600,13 +1600,13 @@ var expectedConf = &Config{
 			LabelValueLengthLimit:          globLabelValueLengthLimit,
 			ScrapeProtocols:                DefaultGlobalConfig.ScrapeProtocols,
 			ScrapeFailureLogFile:           globScrapeFailureLogFile,
-			MetricNameValidationScheme:     UTF8ValidationConfig,
-			MetricNameEscapingScheme:       model.AllowUTF8,
+			MetricNameValidationScheme:     DefaultGlobalConfig.MetricNameValidationScheme,
+			MetricNameEscapingScheme:       DefaultGlobalConfig.MetricNameEscapingScheme,
 			AlwaysScrapeClassicHistograms:  boolPtr(false),
 			ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-			MetricsPath:      DefaultScrapeConfig.MetricsPath,
-			Scheme:           DefaultScrapeConfig.Scheme,
+			MetricsPath:      defaultScrapeConfig.MetricsPath,
+			Scheme:           defaultScrapeConfig.Scheme,
 			HTTPClientConfig: config.DefaultHTTPClientConfig,
 
 			ServiceDiscoveryConfigs: discovery.Configs{
@@ -2646,8 +2646,8 @@ func TestGetScrapeConfigs(t *testing.T) {
 					AlwaysScrapeClassicHistograms:  boolPtr(false),
 					ConvertClassicHistogramsToNHCB: boolPtr(false),
 
-					MetricsPath: DefaultScrapeConfig.MetricsPath,
-					Scheme:      DefaultScrapeConfig.Scheme,
+					MetricsPath: defaultScrapeConfig.MetricsPath,
+					Scheme:      defaultScrapeConfig.Scheme,
 
 					EnableCompression: true,
 
@@ -2692,8 +2692,8 @@ func TestGetScrapeConfigs(t *testing.T) {
 						EnableHTTP2:     true,
 					},
 
-					MetricsPath: DefaultScrapeConfig.MetricsPath,
-					Scheme:      DefaultScrapeConfig.Scheme,
+					MetricsPath: defaultScrapeConfig.MetricsPath,
+					Scheme:      defaultScrapeConfig.Scheme,
 
 					EnableCompression: true,
 
